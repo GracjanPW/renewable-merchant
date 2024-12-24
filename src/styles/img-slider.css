@@ -1,0 +1,43 @@
+
+.slider-img {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    display:block;
+    
+}
+
+.slider-slide {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width:100%;
+    height:100%;
+    transition: translate 300ms ease-in-out;
+}
+
+.slider-btn {
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: background-color;
+    transition-duration: 0.2s;
+    @apply text-3xl text-white p-4 bg-transparent
+}
+.slider-btn:hover,
+.slider-btn:focus-visible {
+    @apply bg-white/10 
+}
+.slider-btn:hover > * {
+    animation: squish 200ms ease-in-out;
+}
+
+@keyframes squish {
+    50% {
+        scale: 1.4 0.6;
+    }
+}
+
+

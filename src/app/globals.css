@@ -6,6 +6,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: sans-serif
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -18,34 +19,35 @@ body {
   position: relative;
 }
 
-.search-bar:hover{
-  @apply bg-white/10
+.search-bar-container:hover .search-bar::placeholder,
+.search-bar-container:hover .search-icon {
+  @apply text-stone-800/70
 }
 .search-bar {
-  width: 5rem;
-  transition: width 0.2s;
+  width: 5.2rem;
+  transition: width, background-color;
+  transition-duration: 0.2s;
   outline: none;
-  @apply bg-inherit text-sky-900 rounded-md p-1 px-2 shadow-sky-950 font-semibold;
+  @apply bg-inherit p-1 px-2 shadow-sky-950 font-medium;
 }
 
 .search-bar::placeholder {
-  @apply text-sky-950;
+  @apply text-stone-800;
 }
 .search-bar:focus::placeholder {
-  @apply text-sky-950/50;
+  @apply text-stone-800/50;
 }
 
-.search-bar:not(:placeholder-shown) {
-  box-shadow: 0 0 0 1px rgba(16, 53, 83, 0.993);
-}
-.search-bar:focus-visible,
+/* .search-bar:focus-visible,
 .x-icon-button:focus-visible {
   box-shadow: 0 0 0 2px rgba(16, 53, 83, 0.993);
-}
+} */
 
 
 .search-bar:focus,.search-bar:not(:placeholder-shown) {
   width: 15rem;
+  border-bottom: 1px solid black;
+  @apply bg-stone-200/80
 
 }
 .search-icon,
@@ -63,7 +65,7 @@ body {
   transition-behavior: discrete;
   transition: opacity, rotate;
   transition-duration: 0.15s;
-  @apply text-sky-950 rounded-md;
+  @apply text-stone-800 rounded-md;
 }
 
 .search-bar-container:has(.search-bar:placeholder-shown) 
