@@ -17,14 +17,13 @@
 
 .slider-btn {
     all: unset;
-    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     cursor: pointer;
     transition: background-color;
     transition-duration: 0.2s;
-    @apply text-3xl text-white p-4 bg-transparent
+    @apply text-3xl text-white p-4 bg-transparent lg:block hidden
 }
 .slider-btn:hover,
 .slider-btn:focus-visible {

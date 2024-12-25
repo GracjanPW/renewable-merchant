@@ -17,6 +17,8 @@ body {
 
 .search-bar-container {
   position: relative;
+  width: min-content;
+  margin: auto;
 }
 
 .search-bar-container:hover .search-bar::placeholder,
@@ -28,7 +30,7 @@ body {
   transition: width, background-color;
   transition-duration: 0.2s;
   outline: none;
-  @apply bg-inherit p-1 px-2 shadow-sky-950 font-medium;
+  @apply bg-inherit md:py-1 px-2 py-0  shadow-sky-950 font-medium;
 }
 
 .search-bar::placeholder {

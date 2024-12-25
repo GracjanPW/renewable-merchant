@@ -51,8 +51,8 @@ export const ImgSlider = ()=> {
                     <div key={`slider-img-${i}`} className="relative slider-slide" style={{
                         translate:`${-100 * imageIndex}%`}}>
                         <img key={`slider-img-${i}`} src={item.image} alt={`Slider Image ${i+1}`} className="slider-img"/>
-                        <div className="absolute bg-black/30 w-full h-full top-0 bottom-0 right-0 left-0 flex justify-center items-center py-20">
-                            <div className="bg-sky-600/80 h-full min-w-20 max-w-[400px] flex flex-col justify-between p-6 -translate-x-1/2">
+                        <div className="absolute bg-black/30 w-full h-full top-0 bottom-0 right-0 left-0 flex justify-center items-center md:py-20 ">
+                            <div className="bg-sky-600/80 h-full min-w-20 md:max-w-[400px] flex flex-col justify-between p-6 lg:-translate-x-1/2">
                                 <h1 className="text-white font-bold text-2xl mb-2">
                                     {item.header}
                                 </h1>
@@ -67,7 +67,7 @@ export const ImgSlider = ()=> {
                     </div>
                 ))}
             </div>
-            <button className="slider-btn text-sky-950 !left-0" onClick={prevSlide}>
+            <button className="slider-btn text-sky-950 !left-0 hidden lg:block" onClick={prevSlide}>
                 <ArrowLeft/>
             </button>
             <button className="slider-btn text-sky-950 !right-0" onClick={nextSlide}>
