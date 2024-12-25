@@ -59,7 +59,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="min-h-screen bg-gray-100"></div>
+      <div className="min-h-screen bg-gray-100">
+            
+
+
+      </div>
     </>
   );
 }
