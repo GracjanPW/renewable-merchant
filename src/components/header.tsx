@@ -71,7 +71,7 @@ export const Header = () => {
             </p>
           </div>
         </a>
-        <nav ref={navRef} data-toggle="false" className="absolute data-[toggle=true]:h-[calc(100vh-66px)] md:data-[toggle=true]:h-auto items-stretch flex justify-start w-full transition-all ease-in-out duration-200 bg-stone-200 pt-3 md:pt-0 flex-col bottom-1 left-0 translate-y-full text-stone-800 h-0 md:items-baseline md:h-auto overflow-hidden md:flex md:relative md:translate-y-0 md:flex-row md:w-auto md:bg-inherit">
+        <nav ref={navRef} data-toggle="false" className="absolute data-[toggle=true]:h-[calc(100vh-66px)] md:data-[toggle=true]:h-auto items-stretch flex justify-start w-full transition-all ease-in-out duration-200 bg-stone-200 md:pt-0 flex-col bottom-1 left-0 translate-y-full text-stone-800 h-0 md:items-baseline md:h-auto overflow-hidden md:flex md:relative md:translate-y-0 md:flex-row md:w-auto md:bg-inherit">
               {nav_buttons_sub.map((i, idx) => (
                 <Link
                   key={`${idx}-${i.text}`}

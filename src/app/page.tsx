@@ -43,7 +43,7 @@ export default function Home() {
               }}
             >
               <div className="h-full w-full bg-gradient-to-t from-sky-600/80 via-sky-600/30 to-white/10 flex flex-col justify-end">
-              <div className="flex items-end">
+                <div className="flex items-end">
                   <div className="text-stone-100 p-4">
                     <h1 className="text-xl font-semibold">Electric Chargers</h1>
                     <h2 className="text-wrap font-medium">
@@ -56,29 +56,41 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="bg-sky-600">
-        <div className="max-w-6xl mx-auto py-10">
-            <h2 className="text-center text-4xl font-semibold text-white tracking-wide">
-              Our Story
-            </h2>
-            <div className="space-y-8 text-stone-100 leading-6 tracking-wide pb-10 text-lg">
-
-            <div className="grid grid-cols-2 pt-10 gap-6">
+        <div className="max-w-6xl mx-auto py-10 px-5">
+          <h2 className="text-center text-4xl font-semibold text-white tracking-wide">
+            Our Story
+          </h2>
+          <div className="space-y-8 text-stone-100 leading-6 tracking-wide pb-10 lg:text-lg">
+            <div className="grid lg:grid-cols-2 grid-cols-1 pt-10 gap-6">
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem odit dolores vero error reprehenderit, quaerat ipsum id quae facilis eligendi perferendis obcaecati eum deleniti placeat labore, in dolore consectetur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Adipisci quidem odit dolores vero error reprehenderit, quaerat
+                ipsum id quae facilis eligendi perferendis obcaecati eum
+                deleniti placeat labore, in dolore consectetur.
               </div>
               <div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem eius reiciendis dicta omnis, dolore vel maiores voluptas quibusdam ad aut doloremque nulla saepe laborum consequuntur veritatis, itaque sit? Rem atque quo voluptate porro esse dicta, dolore quaerat quam aliquid? Illum tempore fuga alias.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+                exercitationem eius reiciendis dicta omnis, dolore vel maiores
+                voluptas quibusdam ad aut doloremque nulla saepe laborum
+                consequuntur veritatis, itaque sit? Rem atque quo voluptate
+                porro esse dicta, dolore quaerat quam aliquid? Illum tempore
+                fuga alias.
               </div>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur minus deserunt illum, unde quasi quas maxime, est possimus nam quo sunt. Quaerat, quibusdam accusamus, quis voluptates repellat vitae suscipit quod porro repudiandae iure animi. Ipsa nulla possimus aliquam porro corrupti beatae debitis dolore, animi pariatur nobis et molestiae numquam quod.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur minus deserunt illum, unde quasi quas maxime, est
+              possimus nam quo sunt. Quaerat, quibusdam accusamus, quis
+              voluptates repellat vitae suscipit quod porro repudiandae iure
+              animi. Ipsa nulla possimus aliquam porro corrupti beatae debitis
+              dolore, animi pariatur nobis et molestiae numquam quod.
             </div>
-            </div>
+          </div>
         </div>
       </div>
       <div className="bg-white">
@@ -87,7 +99,7 @@ export default function Home() {
             Our Customers
           </h2>
           <div className="w-full min-h-[300px] h-[300px]">
-              <ReviewSlider/>
+            <ReviewSlider />
           </div>
         </div>
       </div>
